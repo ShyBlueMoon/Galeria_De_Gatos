@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        recuperarImagensDeGatos()
+
 
 
         binding.rvGatos.layoutManager = GridLayoutManager(
@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() {
             RecyclerView.VERTICAL,
             false
         )
+
+        binding.btnGerarImagens.setOnClickListener {
+            recuperarImagensDeGatos()
+        }
 
     }
 
